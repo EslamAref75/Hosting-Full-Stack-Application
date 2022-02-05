@@ -1,5 +1,11 @@
-
 {
-    "scripts": {},
-    "devDependencies": {}
+  "name": "hosting-full-stack-application",
+  "scripts": {
+    "frontend:install": "cd udagram-frontend && npm install && cd ..",
+    "api:install": "cd udagram-api && npm install && cd ..",
+    "frontend:build": "cd udagram-frontend && npm run build && cd ..",
+    "api:build": "cd udagram-api && npm run build && cd ..",
+    "frontend:deploy":"chmod +x bin/deploy.sh && bin/deploy.sh"
+  },
+  "devDependencies": {}
 }
