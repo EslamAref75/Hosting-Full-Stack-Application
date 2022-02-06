@@ -23,6 +23,11 @@ jobs:
          name: Backend Build
          command: npm run api:build
       - run:
+         name: AWS Install
+         command: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+                  unzip awscliv2.zip
+                  sudo ./aws/install
+      - run:
          name: Frontend Deploy
          command: npm run frontend:deploy
       
