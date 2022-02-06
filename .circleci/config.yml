@@ -23,11 +23,7 @@ jobs:
       - run:
          name: Backend Build
          command: npm run api:build
-      - run:
-          name: Install AWS
-          command: 
-            sudo apt-get install awscli
-           
+     
       - run:
          name: Frontend Deploy
          command: npm run frontend:deploy
