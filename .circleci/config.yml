@@ -10,6 +10,7 @@ jobs:
     steps:
       - node/install
       - checkout
+      - aws-cli/setup
       - run:
          name: Frontend Install
          command: npm run frontend:install
@@ -24,13 +25,17 @@ jobs:
          command: npm run api:build
       - run:
           name: Install pip
-          command: |
+          command: 
             sudo apt update
             sudo apt install -y python3-pip python-dev
       - run:
           name: Install AWS dependencies
-          command: |
+          command: 
             sudo pip install awsebcli
+      - run:
+          name: Install AWS
+          command: 
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"     
       - run:
          name: Frontend Deploy
          command: npm run frontend:deploy
