@@ -31,7 +31,7 @@ jobs:
          command: npm run frontend:deploy
       - run:
          name: Backend Deploy
-         command: npm run api:deploy
+         command: eb create udagram-api-dev
       
 
 workflows:
