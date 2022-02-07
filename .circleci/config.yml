@@ -8,7 +8,7 @@ orbs:
 jobs:
   Build-Deploy:
     docker:
-      - image: cimg/node:17.4.0
+      - image: cimg/base:stable
     steps:
       - checkout
       - node/install
@@ -20,7 +20,7 @@ jobs:
       - run:
          name: Backend Install
          command: npm run api:install
-         
+
       - run:
          name: Frontend Build
          command: npm run frontend:build
