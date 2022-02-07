@@ -5,7 +5,7 @@ orbs:
   aws-cli: circleci/aws-cli@2.0.6
   eb: circleci/aws-elastic-beanstalk@1.0.0
 jobs:
-  Build:
+  Build-Deploy:
     docker:
       - image: cimg/node:17.4.0
     steps:
@@ -36,5 +36,4 @@ jobs:
 workflows:
   sample:
     jobs:
-      - Build
-      - Deploy
+      - Build-Deploy
