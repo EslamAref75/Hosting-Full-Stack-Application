@@ -14,6 +14,7 @@ jobs:
          node-version: "16.13"
       - checkout
       - aws-cli/setup
+      - eb/setup
       - run:
          name: Frontend Install
          command: npm run frontend:install
