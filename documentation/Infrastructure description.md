@@ -10,5 +10,5 @@ Bucket URL: http://udagram-bucket2022.s3-website-us-east-1.amazonaws.com
 
 ## Elastic Beanstalk
 AWS Elastic Beanstalk provides the api hosting.
-EB URL: http://udagram-api-dev.eba-sup2m3sr.us-east-1.elasticbeanstalk.com/
+EB URL: http://udagram-api-dev222222.us-east-1.elasticbeanstalk.com
 
