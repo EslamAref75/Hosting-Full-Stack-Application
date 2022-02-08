@@ -9,7 +9,7 @@ jobs:
   Build-Deploy: 
     docker:
       - image: cimg/base:stable
-    steps:
+    steps: 
       - checkout
       - node/install:
           install-yarn: true
