@@ -3,7 +3,7 @@ branch-defaults:
     environment: uda-api-dev
     group_suffix: null
 deploy:
-  artifact: www/Archive.zip  
+  artifact: www/Archive.zip
 global:
   application_name: uda-api
   branch: null

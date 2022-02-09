@@ -2,9 +2,9 @@
   "name": "udagram-api",
   "version": "2.0.0",
   "description": "",
-  "main": "src/server.js",
+  "main": "server.js",
   "engines": {
-    "node": ">= 14"
+    "node": ">= 12"
   },
   "scripts": {
     "start": "node .",
