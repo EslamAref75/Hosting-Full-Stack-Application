@@ -25,12 +25,11 @@ jobs:
          name: Backend Install
          command: npm run api:install
       - run:
-         name: Frontend Test
-         command: npm run frontend:test
-
-      - run:
          name: Frontend Build
          command: npm run frontend:build
+      - run:
+         name: Frontend Test
+         command: npm run frontend:test
       - run:
          name: Backend Build
          command: npm run api:build
