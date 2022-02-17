@@ -12,12 +12,12 @@ jobs:
       - image: cimg/base:stable
     steps: 
       - checkout
+      - browser-tools/install-chrome
       - node/install:
           install-yarn: true
           node-version: "16.13"
       - aws-cli/setup
       - eb/setup
-      - browser-tools/install-browser-tools
       - run:
          name: Frontend Install
          command: npm run frontend:install
