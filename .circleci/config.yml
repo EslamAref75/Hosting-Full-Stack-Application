@@ -18,12 +18,13 @@ jobs:
           node-version: "16.13"
       - aws-cli/setup
       - eb/setup
-      - run:
-         name: Frontend Test
-         command: npm run frontend:test
+      
       - run:
          name: Frontend Install
          command: npm run frontend:install
+      - run:
+         name: Frontend Test
+         command: npm run frontend:test
       - run:
          name: Backend Install
          command: npm run api:install
